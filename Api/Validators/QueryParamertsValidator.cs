@@ -7,7 +7,7 @@ namespace Api.Validators
     {
         public QueryParamertsValidator()
         {
-            RuleFor(q => q.Reverse)
+            RuleFor(q => q.Data)
                 .NotNull()
                 .NotEmpty()
                 .WithMessage("Property reverse cannot be empty");

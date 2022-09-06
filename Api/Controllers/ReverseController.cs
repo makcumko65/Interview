@@ -18,7 +18,7 @@ namespace Api.Controllers
 
         [HttpGet]
         public IActionResult Get([FromQuery] QueryParameters queryParameters) =>
-            Ok(reverseResolver.Reverse(queryParameters.Reverse));
+            Ok(reverseResolver.Reverse(queryParameters.Data));
         
     }
 }

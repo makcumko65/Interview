@@ -2,6 +2,6 @@
 {
     public class QueryParameters
     {
-        public string? Reverse { get; set; }
+        public string? Data { get; set; }
     }
 }
