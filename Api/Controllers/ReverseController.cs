@@ -1,4 +1,5 @@
-﻿using Application.Interfaces;
+﻿using Api.Models;
+using Application.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,8 +17,8 @@ namespace Api.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get([FromQuery] string data) =>
-            Ok(reverseResolver.Reverse(data));
+        public IActionResult Get([FromQuery] QueryParameters queryParameters) =>
+            Ok(reverseResolver.Reverse(queryParameters.Reverse));
         
     }
 }
